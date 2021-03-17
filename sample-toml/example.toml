@@ -1,0 +1,72 @@
+#Sample TOML file
+[fuzzers]
+    # sub-tables use "." to connect
+    [fuzzers.technique1]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-location/sample/technique1-1/slot_edge.txt",
+            "sample-location/sample/technique1-2/slot_edge.txt",
+            "sample-location/sample/technique1-3/slot_edge.txt",
+            "sample-location/sample/technique1-4/slot_edge.txt",
+            "sample-location/sample/technique1-5/slot_edge.txt"
+        ]
+		# dash options include “solid”, “dot”, “dash”, “longdash”, “dashdot”, or “longdashdot”
+        line_style = "solid"
+        line_color = "rgba(0, 0, 255, 1)"
+		confidence_band_color = "rgba(0, 0, 255, 0.1)"
+
+    [fuzzers.technique2]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-location/sample/technique2-1/slot_edge.txt",
+            "sample-location/sample/technique2-2/slot_edge.txt",
+            "sample-location/sample/technique2-3/slot_edge.txt",
+            "sample-location/sample/technique2-4/slot_edge.txt",
+            "sample-location/sample/technique2-5/slot_edge.txt"
+        ]
+        line_style = "solid"
+        line_color = "rgba(255, 0, 0, 1)"
+		confidence_band_color = "rgba(255, 0, 0, 0.1)"
+
+    [fuzzers.technique3]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-location/sample/technique3-1/slot_edge.txt",
+            "sample-location/sample/technique3-2/slot_edge.txt",
+            "sample-location/sample/technique3-3/slot_edge.txt",
+            "sample-location/sample/technique3-4/slot_edge.txt",
+            "sample-location/sample/technique3-5/slot_edge.txt"
+        ]
+        line_style = "solid"
+        line_color = "rgba(34, 139, 34, 1)"
+		confidence_band_color = "rgba(34, 139, 34, 0.1)"
+
+    [fuzzers.technique4]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-location/sample/technique4-1/slot_edge.txt",
+            "sample-location/sample/technique4-2/slot_edge.txt",
+            "sample-location/sample/technique4-3/slot_edge.txt",
+            "sample-location/sample/technique4-4/slot_edge.txt",
+            "sample-location/sample/technique4-5/slot_edge.txt"
+        ]
+        line_style = "solid"
+        line_color = "rgba(255,140,0,1)"
+		confidence_band_color = "rgba(255,140,0,0.1)"
+
+[misc]
+    # should be one of the followings: "sec", "s", "min", "m", "hour", "h"
+    bucket = "sec"
+    # confidence interval to be used
+    confidence_lvl = 0.95
+    out_dir = "sample-out-dir/sample"
+    ylabel = "mean edge N.O."
+    file_postfix = "-mean-edge-time"
+    project = "sample"
+    # max_time is in hours
+    max_time = 24
+	#x_axis_increment in hours
+	x_axis_increment = 6
+	# y_axis_log_scale is either "true" or "false"
+	y_axis_log_scale = false
+	no_legend = false

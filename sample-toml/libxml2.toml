@@ -1,0 +1,72 @@
+[fuzzers]
+    # sub-tables use "." to connect
+    [fuzzers.afl]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-showmap-data/libxml2/afl-1/slot_edge.txt",
+            "sample-showmap-data/libxml2/afl-2/slot_edge.txt",
+            "sample-showmap-data/libxml2/afl-3/slot_edge.txt",
+            "sample-showmap-data/libxml2/afl-4/slot_edge.txt",
+            "sample-showmap-data/libxml2/afl-5/slot_edge.txt"
+        ]
+		# dash options include “solid”, “dot”, “dash”, “longdash”, “dashdot”, or “longdashdot”
+        line_style = "solid"
+        line_color = "rgba(0, 0, 255, 1)"
+		confidence_band_color = "rgba(0, 0, 255, 0.1)"
+
+    [fuzzers.fast]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-showmap-data/libxml2/fast-1/slot_edge.txt",
+            "sample-showmap-data/libxml2/fast-2/slot_edge.txt",
+            "sample-showmap-data/libxml2/fast-3/slot_edge.txt",
+            "sample-showmap-data/libxml2/fast-4/slot_edge.txt",
+            "sample-showmap-data/libxml2/fast-5/slot_edge.txt"
+        ]
+        line_style = "solid"
+        line_color = "rgba(255, 0, 0, 1)"
+		confidence_band_color = "rgba(255, 0, 0, 0.1)"
+
+    [fuzzers.mopt]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-showmap-data/libxml2/mopt-1/slot_edge.txt",
+            "sample-showmap-data/libxml2/mopt-2/slot_edge.txt",
+            "sample-showmap-data/libxml2/mopt-3/slot_edge.txt",
+            "sample-showmap-data/libxml2/mopt-4/slot_edge.txt",
+            "sample-showmap-data/libxml2/mopt-5/slot_edge.txt"
+        ]
+        line_style = "solid"
+        line_color = "rgba(34, 139, 34, 1)"
+		confidence_band_color = "rgba(34, 139, 34, 0.1)"
+
+    [fuzzers.fastmopt]
+        # the content in data files are "time(sec):data number"
+        data_files = [
+            "sample-showmap-data/libxml2/fastmopt-1/slot_edge.txt",
+            "sample-showmap-data/libxml2/fastmopt-2/slot_edge.txt",
+            "sample-showmap-data/libxml2/fastmopt-3/slot_edge.txt",
+            "sample-showmap-data/libxml2/fastmopt-4/slot_edge.txt",
+            "sample-showmap-data/libxml2/fastmopt-5/slot_edge.txt"
+        ]
+        line_style = "solid"
+        line_color = "rgba(255,140,0,1)"
+		confidence_band_color = "rgba(255,140,0,0.1)"
+
+[misc]
+    # should be one of the followings: "sec", "s", "min", "m", "hour", "h"
+    bucket = "sec"
+    # confidence interval to be used
+    confidence_lvl = 0.95
+    out_dir = "visualisations/libxml2"
+    ylabel = "mean edge N.O."
+    file_postfix = "-mean-edge-time"
+    project = "libxml2"
+    # max_time is in hours
+    max_time = 24
+	#x_axis_increment in hours
+	x_axis_increment = 6
+	# y_axis_log_scale is either "true" or "false"
+	y_axis_log_scale = false
+	no_legend = true
+	

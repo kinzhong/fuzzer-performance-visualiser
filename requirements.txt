@@ -1,0 +1,6 @@
+pandas==0.25.2
+plotly==4.14.3
+numpy==1.17.3
+toml==0.10.2
+webcolors==1.11.1
+scipy==1.6.0
