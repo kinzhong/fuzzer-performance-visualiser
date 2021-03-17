@@ -15,7 +15,7 @@ pip install -r requirements.txt
 # Usage
 After running the fuzzers, the raw data pertaining to the performance of the fuzzer can be generated using the showmaps tool from [fuzzer-data-collector](https://github.com/ThePatrickStar/fuzzer-data-collector).
 
-Next, the visualiser takes in a TOML configuration file, which contains the file location of the generated raw data and the visualisation configuration options. A example TOML can be found from [sample-toml/example.toml](sample-toml/example.toml). The [sample-toml/](sample-toml/) directory also contains other samples which also be generated and used as examples.
+Next, the visualiser takes in a TOML configuration file, which contains the file location of the generated raw data and the visualisation configuration options. A example TOML can be found from [sample-toml/example.toml](sample-toml/example.toml). The [sample-toml/](sample-toml/) directory also contains many other samples which can be generated and used as examples.
 
 Lastly, visualisations can be generated using visualiser.py.
 ```
