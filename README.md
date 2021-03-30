@@ -1,5 +1,5 @@
 # Fuzzer Performance Visualiser
-The fuzzer performance visualiser is a simple tool that can generate highly configurable visualisations from showmap data. The visualiser generates the visualisations in various forms such as a PDF, PNG, and interactive [HTML](https://htmlpreview.github.io/?https://github.com/kinzhong/fuzzer-performance-visualiser/blob/main/sample-visualisations/readelf-with-legend/readelf-mean-edge-time.html).
+The fuzzer performance visualiser is a simple tool that can generate highly configurable and interactive visualisations from showmap data. The visualiser generates the visualisations in various formats such PDF, PNG, and [HTML](https://htmlpreview.github.io/?https://github.com/kinzhong/fuzzer-performance-visualiser/blob/main/sample-visualisations/readelf-with-legend/readelf-mean-edge-time.html).
 
 A sample visualisation can be seen below.
 ![performance evaluation using readelf](https://github.com/kinzhong/fuzzer-performance-visualiser/blob/main/sample-visualisations/readelf-with-legend/readelf-mean-edge-time.png)
